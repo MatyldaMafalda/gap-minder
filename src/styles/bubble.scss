@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.tooltip {
+	display: flex;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0.7);
+	padding: $p-s;
+	color: $tooltip-font-color;
+	border-radius: 20px;
+	font-family: $font;
+	font-size: $font-m;
+	text-transform: capitalize;
+
+	div {
+		margin-bottom: $m-s;
+	}
+
+	div:first-of-type {
+		margin-top: $m-s;
+	}
+}
+
+.bubble {
+	circle {
+		fill-opacity: 0.8;
+	}
+
+	text {
+		fill: black;
+		font-size: 0.7rem;
+	}
+}

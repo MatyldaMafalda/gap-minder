@@ -1,0 +1,69 @@
+@import './variables.scss';
+
+.chart {
+	font-family: $font;
+	padding-top: $p-l;
+	display: flex;
+	justify-content: center;
+}
+
+.chart-label {
+	font-size: $font-m;
+	letter-spacing: $ls;
+}
+
+.chart-svg {
+	width: 100%;
+	height: 90%;
+}
+
+.chart-buttons {
+	display: flex;
+	flex-direction: column;
+	button {
+		margin: $m-s;
+		padding: $p-s $p-m $p-s $p-m;
+		outline: none;
+		background: #fff;
+		border-radius: 50px;
+		width: 5rem;
+
+		&:hover {
+			cursor: pointer;
+			background: black;
+			color: #fff;
+		}
+	}
+}
+
+.legend-text {
+	text-transform: capitalize;
+	font-size: $font-m;
+	letter-spacing: $ls;
+}
+
+.year-label {
+	font-size: 80px;
+	letter-spacing: 5px;
+	font-weight: 800;
+	font-family: system-ui;
+	fill: #ebebeb;
+	opacity: 0.7;
+	text-shadow: 3px 3px 2px rgba(7, 7, 7, 0.103);
+}
+
+.continent-dropdown {
+	margin: $m-s;
+	padding: $p-s 7px;
+	outline: none;
+	background: #fff;
+	border: solid 2px rgb(15, 15, 15);
+	border-radius: 20px;
+	width: 5rem;
+
+	&:hover {
+		cursor: pointer;
+		background: black;
+		color: #fff;
+	}
+}

@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Gap-minder</title>
+	</head>
+	<body>
+		<div class="chart">
+			<div class="chart-container"></div>
+			<div class="chart-buttons">
+				<button id="play-btn">play</button>
+				<button id="reset-btn">reset</button>
+				<select class="continent-dropdown" id="continents">
+					<option value="all">All</option>
+					<option value="europe">Europe</option>
+					<option value="asia">Asia</option>
+					<option value="africa">Africa</option>
+					<option value="australia">Australia</option>
+					<option value="north america">North America</option>
+					<option value="south america">South America</option>
+				</select>
+			</div>
+		</div>
+		<div class="slider-container">
+			<span class="year">1800</span>
+			<input
+				type="range"
+				min="1800"
+				max="2014"
+				value="1800"
+				class="slider"
+				id="date-slider"
+			/>
+			<span class="year">2014</span>
+		</div>
+	</body>
+</html>

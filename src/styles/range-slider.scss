@@ -1,0 +1,39 @@
+@import './variables.scss';
+
+.slider-container {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 70%;
+	height: 5px;
+	background: #000000;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+	&:hover {
+		opacity: 1;
+	}
+
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 25px;
+		height: 25px;
+		border-radius: 50px;
+		border: solid 3px black;
+		background: #ffffff;
+		cursor: pointer;
+	}
+}
+
+.year {
+	font-family: $font;
+	padding: 5px;
+}
